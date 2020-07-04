@@ -4,6 +4,6 @@ export default makeStyles((theme) => ({
   line: {
     height: "2px",
     backgroundColor: theme.palette.secondary.main,
-    border: 0
+    width: '100%',
   },
 }));

@@ -2,8 +2,7 @@ import React from "react";
 import AppHeader from "../components/molecules/Header/Header";
 import { MuiThemeProvider, Grid } from "@material-ui/core";
 import theme from "../config/Theme";
-import Sheet from "../components/atoms/Sheet/Sheet";
-import AddTodo from "../components/molecules/AddTodo/AddTodo";
+import TodoList from "../components/organisms/TodoList/TodoList";
 
 function AppView() {
   return (
@@ -14,9 +13,7 @@ function AppView() {
           <Grid item xs={3}></Grid>
           <Grid item xs={6}></Grid>
           <Grid item xs={3}>
-            <Sheet>
-              <AddTodo />
-            </Sheet>
+            <TodoList/>
           </Grid>
         </Grid>
       </MuiThemeProvider>

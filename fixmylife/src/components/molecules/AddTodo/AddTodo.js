@@ -5,11 +5,11 @@ import TextButton from "../../atoms/TextButton/TextButton";
 
 const AddTodo = () => {
   return (
-    <Grid container direction="row" spacing={2} justify="center">
-      <Grid item xs={10}>
-        <TextField placeholder="New Todo" />
+    <Grid container direction="row" spacing={2} >
+      <Grid item xs={9}>
+        <TextField placeholder="New Todo"/>
       </Grid>
-      <Grid item xs={2}>
+      <Grid item xs={3}>
         <TextButton text={"Add"} />
       </Grid>
     </Grid>
