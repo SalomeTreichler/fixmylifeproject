@@ -5,7 +5,6 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import logo from "../../../images/FMLLogo.png";
 import Grid from "@material-ui/core/Grid";
-import tomatoLogo from "../../../images/tomatoBagLogo.png"
 
 const Header = () => {
   const classes = useStyle();
