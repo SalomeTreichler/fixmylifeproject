@@ -7,12 +7,12 @@ import useStyle from "./ListItemStyle";
 const ListItem = (props) => {
   const classes = useStyle();
 
-  const { text, handleChange } = props;
+  const { text, itemId, handleChange } = props;
 
   return (
     <Grid container direction="row" spacing={2} alignItems="center" className={classes.item}>
       <Grid item>
-        <Checkbox onChange={handleChange} />
+        <Checkbox onChange={handleChange(itemId)} />
       </Grid>
       <Grid item>
         <Typography>{text}</Typography>

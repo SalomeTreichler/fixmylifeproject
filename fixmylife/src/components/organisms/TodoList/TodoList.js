@@ -7,6 +7,8 @@ import AddTodo from "../../molecules/AddTodo/AddTodo";
 import ListItem from "../../molecules/ListItem/ListItem";
 
 const TodoList = (props) => {
+  let todoList = Array.from(props.todos);
+
   return (
     <Sheet>
       <Grid container direction="column" alignItems="center" spacing={2}>
@@ -14,16 +16,16 @@ const TodoList = (props) => {
         <Grid container direction="column" alignItems="flex-start">
           <Line />
           <Grid item>
-            {[...props.todos.values()].map((todo) => (
+            {todoList.map((todo) => (
               <ListItem
-                handleChange={props.deleteTodo(todo.id)}
+                handleChange={props.onDeleteTodo}
                 key={todo.id}
                 text={todo.text}
               ></ListItem>
             ))}
           </Grid>
           <Line />
-          <AddTodo {...props} />
+          <AddTodo {...props} addTodo={props.onAdd} />
         </Grid>
       </Grid>
     </Sheet>

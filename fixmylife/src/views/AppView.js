@@ -14,7 +14,7 @@ function AppView(props) {
           <Grid item xs={3}></Grid>
           <Grid item xs={6}></Grid>
           <Grid item xs={3}>
-            <TodoList {...props} />
+            <TodoList {...props} todos={props.todos.values}/>
           </Grid>
         </Grid>
         <Footer />
