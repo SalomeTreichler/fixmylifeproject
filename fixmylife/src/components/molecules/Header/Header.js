@@ -1,15 +1,14 @@
 import React, { Fragment } from "react";
-import useStyle from "./AppStyle";
+import useStyle from "./HeaderStyle";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
-import logo from "./images/FMLLogo.png";
+import logo from "../../../images/FMLLogo.png";
 import Grid from "@material-ui/core/Grid";
-import tomatoLogo from "./images/tomatoBagLogo.png"
+import tomatoLogo from "../../../images/tomatoBagLogo.png"
 
-function App() {
+const Header = () => {
   const classes = useStyle();
-
   return (
     <Fragment>
       <AppBar elevation={0} position="static">
@@ -41,6 +40,6 @@ function App() {
       </Grid>
     </Fragment>
   );
-}
+};
 
-export default App;
+export default Header;
