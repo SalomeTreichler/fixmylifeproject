@@ -1,14 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import App from "./App";
+import AppView from "./views/AppView";
 import { MuiThemeProvider, CssBaseline } from "@material-ui/core";
 import theme from "./config/Theme.js"
 
 ReactDOM.render(
   <MuiThemeProvider theme={theme}>
     <CssBaseline />
-      <App />
+      <AppView />
     </MuiThemeProvider>,
   document.getElementById("root")
 );

@@ -21,4 +21,4 @@ Sheet.propTypes = {
   variant: PropTypes.oneOf(["light", "dark"]),
 };
 
-export default Paper;
+export default Sheet;
