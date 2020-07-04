@@ -24,6 +24,4 @@ const theme = createMuiTheme({
   },
 });
 
-console.log(theme);
-
 export default theme;

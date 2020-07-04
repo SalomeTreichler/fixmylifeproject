@@ -10,8 +10,7 @@ const AddTodo = (props) => {
   const [todo, setTodo] = useState("");
 
   const handleSubmit = (evt) => {
-    evt.preventDefault();
-    props.onAdd(todo);
+    props.onAdd(todo)    
   };
 
   return (
