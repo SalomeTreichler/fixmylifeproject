@@ -4,6 +4,7 @@ import { MuiThemeProvider, Grid } from "@material-ui/core";
 import theme from "../config/Theme";
 import Sheet from "../components/atoms/Sheet/Sheet";
 import AddTodo from "../components/molecules/AddTodo/AddTodo";
+import Footer from "../components/molecules/Footer/Footer";
 
 function AppView() {
   return (
@@ -19,6 +20,7 @@ function AppView() {
             </Sheet>
           </Grid>
         </Grid>
+        <Footer/>
       </MuiThemeProvider>
     </div>
   );

@@ -30,14 +30,6 @@ const Header = () => {
           </Grid>
         </Toolbar>
       </AppBar>
-      <Grid container direction="row" justify="flex-end" alignItems="flex-end" spacing={1} className={classes.footer}>
-        <Grid item>
-          <Typography>Powered by</Typography>
-          </Grid>
-        <Grid item>
-          <img src={tomatoLogo} alt="Tomato Bag Logo" className={classes.tomatoLogo}/>
-        </Grid>
-      </Grid>
     </Fragment>
   );
 };

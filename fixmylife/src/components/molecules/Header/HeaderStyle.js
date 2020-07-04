@@ -9,14 +9,5 @@ export default makeStyles((theme) => ({
   },
   grid: {
     position: "absolute",
-  },
-  footer: {
-    position: "fixed",
-    bottom: 0,
-    paddingRight: 10,
-    paddingBottom: 10
-  },
-  tomatoLogo:{
-    width: 30,
   }
 }));
