@@ -1,6 +1,6 @@
 import { createMuiTheme } from "@material-ui/core";
 
-const noaTheme = createMuiTheme({
+const theme = createMuiTheme({
   palette: {
     primary: {
       dark: "#EFC256",
@@ -24,6 +24,6 @@ const noaTheme = createMuiTheme({
   },
 });
 
-console.log(noaTheme);
+console.log(theme);
 
-export default noaTheme;
+export default theme;
